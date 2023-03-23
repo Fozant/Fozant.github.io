@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<style>
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;
+	  box-sizing: border-box;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.result {
+	  border: 1px solid black;
+	  padding: 10px;
+	  margin: 10px;
+	  height: fit-content;
+	}
+
+	.right {
+	  float: right;
+	  margin-top: 0;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <h1>BMI Calculator</h1>
+    <form>
+    	<label>Jenis Kelamin:</label>
+    	<input type="radio" name="gender" value="pria"> Pria
+    	<input type="radio" name="gender" value="wanita"> Wanita
+    	<label>Berat Badan (kg):</label>
+    	<input type="number" name="weight" required>
+    	<label>Usia (tahun):</label>
+    	<input type="number" name="age" required>
+    	<label>Tinggi Badan (cm):</label>
+    	<input type="number" name="height" required>
+    	<input type="submit" value="Hitung BMI">
+    	<input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <div class="column">
+    <div class="result right">
+      <h2>HERE IS THE RESULT:</h2>
+      <p>BMI: <span id="bmi"></span></p>
+      <p>Status: <span id="status"></span></p>
+
+	  <p>Anda berada dalam kategori "<span id="weight-category"></span> " .</p>
+	  <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.
+		Jika BMI anda berada dalam kategori ini anda dianjurkan untuk" <span id="recommendation"></span> "</p>
+		<p><button>Konsultasi ahli gizi via aplikasi</button> <button>Registrasi online ahli Gizi</button></p>
+	
+		<p>Bmi TIDAK SEPENUHNYA MEWALIKI DIAGNOSIS MENYELURUH DARI KESEHATAN TUBUH DAN RESIKO penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai 
+			resiko dan kekhawatiran anda terkait dengan berat badan anda..</p>
+			<p>Beberapa penyakit yang berasal dari kegemukan</p>
+		
+<ul>
+	<li>Diabetes</li>
+	<li>Hipertensi</li>
+	<li>Sakit Jantung</li>
+	<li>Osteoarthritis</li>
+  </ul>
+  <p><button>Konsultasi Dokter Via aplikasi</button> <button>Registrasi online sekarang</button></p>
+	</div>
+	 </div>
+	</div>
+	  
+    </div>
+	
+  </div>
+</div>
+
+<p><strong>Keunggulan fitur:</strong></p>
+<ol>
+	<li>Menghitung berat badan</li>
+	<li>Menentukan kategori berat badan ideal atau tidak</li>
+	<li>Mempersiapkan program penurunan berat badan</li>
+</ol>
+
+<p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+
+<p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks massa tubuh atau BMI dihitung sebagai berat badan Anda dalam KG dibagi dengan kuadrat tinggi badan Anda dalam meter atau BMI = KG/M'2.</p>
+
+<script src="script.js"></script>
+<div style="text-align: center;">
+	<p>Donwload Applikasi</p>
+	<img src="andro.png" style="display: inline-block; margin-right: 10px;">
+	<img src="apple.png" style="display: inline-block; margin-left: 10px;">
+  </div>
+</body>
+</html>
